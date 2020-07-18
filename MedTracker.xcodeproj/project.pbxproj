@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56239E2974DDE9003BBED83 /* Pods_MedTracker_MedTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4F58414ECA6FF381B58D0C /* Pods_MedTracker_MedTrackerUITests.framework */; };
 		D01CB44D24BEE7D100249EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01CB44C24BEE7D100249EA9 /* AppDelegate.swift */; };
 		D01CB44F24BEE7D100249EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01CB44E24BEE7D100249EA9 /* SceneDelegate.swift */; };
 		D01CB45124BEE7D100249EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01CB45024BEE7D100249EA9 /* ViewController.swift */; };
@@ -15,6 +16,11 @@
 		D01CB45924BEE7DD00249EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01CB45724BEE7DD00249EA9 /* LaunchScreen.storyboard */; };
 		D01CB46424BEE7DD00249EA9 /* MedTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01CB46324BEE7DD00249EA9 /* MedTrackerTests.swift */; };
 		D01CB46F24BEE7DE00249EA9 /* MedTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01CB46E24BEE7DE00249EA9 /* MedTrackerUITests.swift */; };
+		D046903A24C0D65500C9625C /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903924C0D65500C9625C /* UserProfileViewController.swift */; };
+		D046903C24C2FE2400C9625C /* HelpersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903B24C2FE2400C9625C /* HelpersViewController.swift */; };
+		D046903E24C337B500C9625C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903D24C337B400C9625C /* SettingsViewController.swift */; };
+		D1E2A1636824F7B40F490354 /* Pods_MedTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBE6E6CFA5B1C9DC7823BF /* Pods_MedTracker.framework */; };
+		EE95BB85DBEA1C953F36D7E6 /* Pods_MedTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E184D4F4B88C77DE5C626529 /* Pods_MedTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19B38729F392FF9BECEDB7B9 /* Pods-MedTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-MedTrackerTests/Pods-MedTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D4F58414ECA6FF381B58D0C /* Pods_MedTracker_MedTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedTracker_MedTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7ED5A4685A0065C407ACD5 /* Pods-MedTracker-MedTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTracker-MedTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-MedTracker-MedTrackerUITests/Pods-MedTracker-MedTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A10AC36533C5375878C13CB /* Pods-MedTracker-MedTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTracker-MedTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-MedTracker-MedTrackerUITests/Pods-MedTracker-MedTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B9C324D2F4021E3469CF61C /* Pods-MedTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-MedTrackerTests/Pods-MedTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9CBE6E6CFA5B1C9DC7823BF /* Pods_MedTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD88951692737E5C1926B1D /* Pods-MedTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTracker.debug.xcconfig"; path = "Target Support Files/Pods-MedTracker/Pods-MedTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		D01CB44924BEE7D100249EA9 /* MedTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01CB44C24BEE7D100249EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D01CB44E24BEE7D100249EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		D01CB46A24BEE7DE00249EA9 /* MedTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01CB46E24BEE7DE00249EA9 /* MedTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTrackerUITests.swift; sourceTree = "<group>"; };
 		D01CB47024BEE7DE00249EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D046903924C0D65500C9625C /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		D046903B24C2FE2400C9625C /* HelpersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersViewController.swift; sourceTree = "<group>"; };
+		D046903D24C337B400C9625C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E184D4F4B88C77DE5C626529 /* Pods_MedTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92EDDD3D950CDB3A3D59AF9 /* Pods-MedTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTracker.release.xcconfig"; path = "Target Support Files/Pods-MedTracker/Pods-MedTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E2A1636824F7B40F490354 /* Pods_MedTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE95BB85DBEA1C953F36D7E6 /* Pods_MedTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56239E2974DDE9003BBED83 /* Pods_MedTracker_MedTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47FBD42E8C04F98B45392461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9CBE6E6CFA5B1C9DC7823BF /* Pods_MedTracker.framework */,
+				2D4F58414ECA6FF381B58D0C /* Pods_MedTracker_MedTrackerUITests.framework */,
+				E184D4F4B88C77DE5C626529 /* Pods_MedTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56907EEFDFFDC115AF600F3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABD88951692737E5C1926B1D /* Pods-MedTracker.debug.xcconfig */,
+				E92EDDD3D950CDB3A3D59AF9 /* Pods-MedTracker.release.xcconfig */,
+				9A10AC36533C5375878C13CB /* Pods-MedTracker-MedTrackerUITests.debug.xcconfig */,
+				4D7ED5A4685A0065C407ACD5 /* Pods-MedTracker-MedTrackerUITests.release.xcconfig */,
+				9B9C324D2F4021E3469CF61C /* Pods-MedTrackerTests.debug.xcconfig */,
+				19B38729F392FF9BECEDB7B9 /* Pods-MedTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D01CB44024BEE7D100249EA9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				D01CB46224BEE7DD00249EA9 /* MedTrackerTests */,
 				D01CB46D24BEE7DE00249EA9 /* MedTrackerUITests */,
 				D01CB44A24BEE7D100249EA9 /* Products */,
+				56907EEFDFFDC115AF600F3E /* Pods */,
+				47FBD42E8C04F98B45392461 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +152,9 @@
 				D01CB45524BEE7DD00249EA9 /* Assets.xcassets */,
 				D01CB45724BEE7DD00249EA9 /* LaunchScreen.storyboard */,
 				D01CB45A24BEE7DD00249EA9 /* Info.plist */,
+				D046903924C0D65500C9625C /* UserProfileViewController.swift */,
+				D046903D24C337B400C9625C /* SettingsViewController.swift */,
+				D046903B24C2FE2400C9625C /* HelpersViewController.swift */,
 			);
 			path = MedTracker;
 			sourceTree = "<group>";
@@ -135,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D01CB47324BEE7DE00249EA9 /* Build configuration list for PBXNativeTarget "MedTracker" */;
 			buildPhases = (
+				904D9A2FAC9A1AA20F2C9915 /* [CP] Check Pods Manifest.lock */,
 				D01CB44524BEE7D100249EA9 /* Sources */,
 				D01CB44624BEE7D100249EA9 /* Frameworks */,
 				D01CB44724BEE7D100249EA9 /* Resources */,
+				31F33F9EF23C0CE07124DD2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D01CB47624BEE7DE00249EA9 /* Build configuration list for PBXNativeTarget "MedTrackerTests" */;
 			buildPhases = (
+				47AA4312B50880DA904DE8D3 /* [CP] Check Pods Manifest.lock */,
 				D01CB45B24BEE7DD00249EA9 /* Sources */,
 				D01CB45C24BEE7DD00249EA9 /* Frameworks */,
 				D01CB45D24BEE7DD00249EA9 /* Resources */,
@@ -170,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D01CB47924BEE7DE00249EA9 /* Build configuration list for PBXNativeTarget "MedTrackerUITests" */;
 			buildPhases = (
+				531F431AB687E011C72045F6 /* [CP] Check Pods Manifest.lock */,
 				D01CB46624BEE7DE00249EA9 /* Sources */,
 				D01CB46724BEE7DE00249EA9 /* Frameworks */,
 				D01CB46824BEE7DE00249EA9 /* Resources */,
+				9D1F40EEA14A7B4199710765 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +308,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31F33F9EF23C0CE07124DD2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedTracker/Pods-MedTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedTracker/Pods-MedTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedTracker/Pods-MedTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47AA4312B50880DA904DE8D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531F431AB687E011C72045F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedTracker-MedTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		904D9A2FAC9A1AA20F2C9915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1F40EEA14A7B4199710765 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedTracker-MedTrackerUITests/Pods-MedTracker-MedTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedTracker-MedTrackerUITests/Pods-MedTracker-MedTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedTracker-MedTrackerUITests/Pods-MedTracker-MedTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D01CB44524BEE7D100249EA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D01CB45124BEE7D100249EA9 /* ViewController.swift in Sources */,
+				D046903C24C2FE2400C9625C /* HelpersViewController.swift in Sources */,
+				D046903A24C0D65500C9625C /* UserProfileViewController.swift in Sources */,
 				D01CB44D24BEE7D100249EA9 /* AppDelegate.swift in Sources */,
 				D01CB44F24BEE7D100249EA9 /* SceneDelegate.swift in Sources */,
+				D046903E24C337B500C9625C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +592,11 @@
 		};
 		D01CB47424BEE7DE00249EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD88951692737E5C1926B1D /* Pods-MedTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3VFSW8GUZL;
 				INFOPLIST_FILE = MedTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +611,11 @@
 		};
 		D01CB47524BEE7DE00249EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92EDDD3D950CDB3A3D59AF9 /* Pods-MedTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3VFSW8GUZL;
 				INFOPLIST_FILE = MedTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +630,7 @@
 		};
 		D01CB47724BEE7DE00249EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9C324D2F4021E3469CF61C /* Pods-MedTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +652,7 @@
 		};
 		D01CB47824BEE7DE00249EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B38729F392FF9BECEDB7B9 /* Pods-MedTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +674,7 @@
 		};
 		D01CB47A24BEE7DE00249EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A10AC36533C5375878C13CB /* Pods-MedTracker-MedTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +694,7 @@
 		};
 		D01CB47B24BEE7DE00249EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7ED5A4685A0065C407ACD5 /* Pods-MedTracker-MedTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
