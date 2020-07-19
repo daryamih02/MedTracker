@@ -18,23 +18,24 @@ class UserProfileViewController: FormViewController {
     }
     
     func createForm() {
-        form +++
-
-                   Section("Данные профиля")
-
+        form +++ Section("Данные профиля")
+//            <<< TextRow() {
+//                $0.title = "TextRow"
+//                $0.placeholder = "Placeholder"
+//            }
                   <<< TextRow() {
                       $0.title = "Имя"
-                      $0.value = "John Doe"
+                      $0.value = "Дарья"
                   }
 
                   <<< TextRow() {
                       $0.title = "Ник"
-                      $0.value = "johndoe1"
+                      $0.value = "daryamih02"
                   }
 
                   <<< EmailRow() {
                       $0.title = "Email Address"
-                      $0.value = "john@doe.com"
+                      $0.value = "dm@gmail.com"
                   }
 
                   <<< PasswordRow() {
@@ -42,25 +43,15 @@ class UserProfileViewController: FormViewController {
                       $0.value = "johndoe9876"
                 }
             
-                <<< DecimalRow() {
-                    $0.title = "Ваш вес"
-                    //$0.value = 5дефолт
-                    $0.formatter = DecimalFormatter()
-                    $0.useFormatterDuringInput = true
-                    //$0.useFormatterOnDidBeginEditing = true
-                    }.cellSetup { cell, _  in
-                        cell.textField.keyboardType = .numberPad
+                <<< IntRow() {
+                    $0.title = "Вес"
+                    $0.value = 56
                 }
                 
             
-                <<< DecimalRow() {
-                    $0.title = "Ваш рост"
-                    //$0.value = 5дефолт
-                    $0.formatter = DecimalFormatter()
-                    $0.useFormatterDuringInput = true
-                    //$0.useFormatterOnDidBeginEditing = true
-                    }.cellSetup { cell, _  in
-                        cell.textField.keyboardType = .numberPad
+                <<< IntRow() {
+                    $0.title = "Рост"
+                    $0.value = 166
                 }
             
                <<< PickerInputRow<String>("Пол"){
@@ -90,7 +81,7 @@ class UserProfileViewController: FormViewController {
                                         $0.placeholder = "Опишите заболевание"
                                     }
                                 }
-                                $0 <<< NameRow() {
+                                $0 <<< TextRow() {
                                     $0.placeholder = "Опишите заболевание"
                                 }
                 }

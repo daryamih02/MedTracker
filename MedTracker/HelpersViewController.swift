@@ -32,14 +32,9 @@ override func viewDidLoad() {
                 $0.hidden = "$segments != 'Калькулятор'" // .Predicate(NSPredicate(format: "$segments != 'Калькулятор'"))
             }
             
-            <<< DecimalRow() {
+            <<< IntRow() {
                 $0.title = "Ваш вес"
-                //$0.value = 5дефолт
-                $0.formatter = DecimalFormatter()
-                $0.useFormatterDuringInput = true
-                //$0.useFormatterOnDidBeginEditing = true
-                }.cellSetup { cell, _  in
-                    cell.textField.keyboardType = .numberPad
+                $0.value = 56
             }
             
             <<< PushRow<String>() {
@@ -56,36 +51,37 @@ override func viewDidLoad() {
                 $0.tag = "plan_s"
                 $0.hidden = "$segments != 'Планировщик'"
             }
-             <<< DateRow() { $0.value = Date(); $0.title = "С" }
+             <<< DateRow("dateFrom") { $0.value = Date(); $0.title = "С" }
             
-             <<< DateRow() { $0.value = Date(); $0.title = "По" }
+            <<< DateRow("dateTo") {
+                $0.title = "По"
+                
+            }
+            
+
+            <<< LabelRow("label") {
+                
+                $0.value = "1212121"
+                $0.hidden = .function(["dateTo"], { form -> Bool in
+                    let row : DateRow = form.rowBy(tag: "dateTo") as! DateRow
+                    if row.value == nil {
+                        return true
+                    } else {
+                        return false
+                    }
+                    
+                })
+            }
 
 
             +++ Section("Дневник веса"){
                 $0.tag = "weight_s"
                 $0.hidden = "$segments != 'Дневник веса'"
             }
-            <<< DecimalRow() {
+            <<< IntRow() {
                 $0.title = "Текущий вес"
-                //$0.value = 5//дефолт
-                $0.formatter = DecimalFormatter()
-                $0.useFormatterDuringInput = true
-                //$0.useFormatterOnDidBeginEditing = true
-                }.cellSetup { cell, _  in
-                    cell.textField.keyboardType = .numberPad
+                $0.value = 56
             }
-
-            <<< DecimalRow() {
-                $0.title = "Желаемый вес"
-                //$0.value = 5//дефолт
-                $0.formatter = DecimalFormatter()
-                $0.useFormatterDuringInput = true
-                //$0.useFormatterOnDidBeginEditing = true
-                }.cellSetup { cell, _  in
-                    cell.textField.keyboardType = .numberPad
-            }
-        
-        
     }
     
 }

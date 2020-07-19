@@ -24,14 +24,52 @@ func createForm() {
     <<< PushRow<String>() {
         $0.title = "Вес"
         $0.options = ["Килограммы", "Фунты"]
-        $0.value = "КИлограммы"
-        $0.selectorTitle = "Выберите единицу измерения веса!"
+        $0.value = "Килограммы"
+        $0.selectorTitle = "Выберите единицу измерения веса"
         }.onPresent { from, to in
             to.dismissOnSelection = false
             to.dismissOnChange = false
     }
+    
+    +++
+        
+    Section("Цель")
+        
+    <<< IntRow() {
+        $0.title = "Желаемый вес"
+        $0.value = 55
+    }
+        
+        
+    +++
+    
+    Section("Индекс массы тела")
+       
+    <<< SwitchRow() {
+        $0.title = "Показывать ИМТ"
+        $0.value = true
+    }
+    
+    +++
+    
+    Section("Отсрочка напоминаний")
+    
+    <<< AlertRow<String>() {
+        $0.title = "Время отсрочки напоминаний"
+        $0.cancelTitle = "Закрыть"
+        $0.selectorTitle = "Время"
+        $0.options = ["1 минута", "5 минут", "10 минут", "15 минут", "30 минут"]
+        $0.value = "10 минут"
+        }.onChange { row in
+            print(row.value ?? "No Value")
+        }
+        .onPresent{ _, to in
+            to.view.tintColor = .systemBlue
+    }
+
+    
+    }
 
     
 }
-    
-}
+
