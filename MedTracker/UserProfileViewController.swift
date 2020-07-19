@@ -42,6 +42,33 @@ class UserProfileViewController: FormViewController {
                       $0.value = "johndoe9876"
                 }
             
+                <<< DecimalRow() {
+                    $0.title = "Ваш вес"
+                    //$0.value = 5дефолт
+                    $0.formatter = DecimalFormatter()
+                    $0.useFormatterDuringInput = true
+                    //$0.useFormatterOnDidBeginEditing = true
+                    }.cellSetup { cell, _  in
+                        cell.textField.keyboardType = .numberPad
+                }
+                
+            
+                <<< DecimalRow() {
+                    $0.title = "Ваш рост"
+                    //$0.value = 5дефолт
+                    $0.formatter = DecimalFormatter()
+                    $0.useFormatterDuringInput = true
+                    //$0.useFormatterOnDidBeginEditing = true
+                    }.cellSetup { cell, _  in
+                        cell.textField.keyboardType = .numberPad
+                }
+            
+               <<< PickerInputRow<String>("Пол"){
+                   $0.title = "Пол"
+                   $0.options = ["Женщина", "Мужчина"]
+                   $0.value = $0.options.first
+               }
+            
             <<< ButtonRow("Настройки") { row in
                 row.title = row.tag
                 row.presentationMode = .segueName(segueName: "SettingsViewController", onDismiss:{  vc in vc.dismiss(animated: true) })

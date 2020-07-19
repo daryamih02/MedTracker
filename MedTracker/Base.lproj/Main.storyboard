@@ -33,7 +33,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="nBC-jn-phS"/>
                     <connections>
-                        <segue destination="tBR-7T-Djw" kind="show" id="UCA-In-Irf"/>
+                        <segue destination="tBR-7T-Djw" kind="show" identifier="SettingsViewController" id="UCA-In-Irf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vs0-5I-ffd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
