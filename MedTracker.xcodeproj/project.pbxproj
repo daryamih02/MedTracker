@@ -15,6 +15,21 @@
 		D01CB45924BEE7DD00249EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01CB45724BEE7DD00249EA9 /* LaunchScreen.storyboard */; };
 		D01CB46424BEE7DD00249EA9 /* MedTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01CB46324BEE7DD00249EA9 /* MedTrackerTests.swift */; };
 		D01CB46F24BEE7DE00249EA9 /* MedTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01CB46E24BEE7DE00249EA9 /* MedTrackerUITests.swift */; };
+		E04A866424C3681800A92A25 /* HelthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A866324C3681800A92A25 /* HelthViewController.swift */; };
+		E04A866924C36B3500A92A25 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04A866624C36B3500A92A25 /* Realm.framework */; };
+		E04A866A24C36B3500A92A25 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E04A866624C36B3500A92A25 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E04A866B24C36B3500A92A25 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04A866724C36B3500A92A25 /* SnapKit.framework */; };
+		E04A866C24C36B3500A92A25 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E04A866724C36B3500A92A25 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E04A866D24C36B3500A92A25 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04A866824C36B3500A92A25 /* RealmSwift.framework */; };
+		E04A866E24C36B3500A92A25 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E04A866824C36B3500A92A25 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E04A867124C36E7F00A92A25 /* MedicamentsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A867024C36E7F00A92A25 /* MedicamentsCollectionView.swift */; };
+		E04A867324C36ED200A92A25 /* PillsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A867224C36ED200A92A25 /* PillsCollectionViewCell.swift */; };
+		E06E739D24C88FFB008987E8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06E739C24C88FFB008987E8 /* Eureka.framework */; };
+		E06E739E24C88FFB008987E8 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06E739C24C88FFB008987E8 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0BB942E24C76E4000B06E54 /* Pill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB942D24C76E4000B06E54 /* Pill.swift */; };
+		E0BB943024C76E5400B06E54 /* PillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB942F24C76E5400B06E54 /* PillModel.swift */; };
+		E0BB943224C76FBF00B06E54 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB943124C76FBF00B06E54 /* DBManager.swift */; };
+		E0BB943424C782B400B06E54 /* AddPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB943324C782B400B06E54 /* AddPills.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E04A866F24C36B3500A92A25 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E04A866A24C36B3500A92A25 /* Realm.framework in Embed Frameworks */,
+				E06E739E24C88FFB008987E8 /* Eureka.framework in Embed Frameworks */,
+				E04A866C24C36B3500A92A25 /* SnapKit.framework in Embed Frameworks */,
+				E04A866E24C36B3500A92A25 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D01CB44924BEE7D100249EA9 /* MedTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01CB44C24BEE7D100249EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +81,17 @@
 		D01CB46A24BEE7DE00249EA9 /* MedTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01CB46E24BEE7DE00249EA9 /* MedTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTrackerUITests.swift; sourceTree = "<group>"; };
 		D01CB47024BEE7DE00249EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04A866324C3681800A92A25 /* HelthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelthViewController.swift; sourceTree = "<group>"; };
+		E04A866624C36B3500A92A25 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		E04A866724C36B3500A92A25 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		E04A866824C36B3500A92A25 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		E04A867024C36E7F00A92A25 /* MedicamentsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentsCollectionView.swift; sourceTree = "<group>"; };
+		E04A867224C36ED200A92A25 /* PillsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E06E739C24C88FFB008987E8 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		E0BB942D24C76E4000B06E54 /* Pill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pill.swift; sourceTree = "<group>"; };
+		E0BB942F24C76E5400B06E54 /* PillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillModel.swift; sourceTree = "<group>"; };
+		E0BB943124C76FBF00B06E54 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		E0BB943324C782B400B06E54 /* AddPills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPills.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +99,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04A866924C36B3500A92A25 /* Realm.framework in Frameworks */,
+				E06E739D24C88FFB008987E8 /* Eureka.framework in Frameworks */,
+				E04A866B24C36B3500A92A25 /* SnapKit.framework in Frameworks */,
+				E04A866D24C36B3500A92A25 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +130,7 @@
 				D01CB46224BEE7DD00249EA9 /* MedTrackerTests */,
 				D01CB46D24BEE7DE00249EA9 /* MedTrackerUITests */,
 				D01CB44A24BEE7D100249EA9 /* Products */,
+				E04A866524C36B3500A92A25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +154,13 @@
 				D01CB45524BEE7DD00249EA9 /* Assets.xcassets */,
 				D01CB45724BEE7DD00249EA9 /* LaunchScreen.storyboard */,
 				D01CB45A24BEE7DD00249EA9 /* Info.plist */,
+				E04A866324C3681800A92A25 /* HelthViewController.swift */,
+				E04A867024C36E7F00A92A25 /* MedicamentsCollectionView.swift */,
+				E04A867224C36ED200A92A25 /* PillsCollectionViewCell.swift */,
+				E0BB942D24C76E4000B06E54 /* Pill.swift */,
+				E0BB942F24C76E5400B06E54 /* PillModel.swift */,
+				E0BB943124C76FBF00B06E54 /* DBManager.swift */,
+				E0BB943324C782B400B06E54 /* AddPills.swift */,
 			);
 			path = MedTracker;
 			sourceTree = "<group>";
@@ -128,6 +183,17 @@
 			path = MedTrackerUITests;
 			sourceTree = "<group>";
 		};
+		E04A866524C36B3500A92A25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06E739C24C88FFB008987E8 /* Eureka.framework */,
+				E04A866624C36B3500A92A25 /* Realm.framework */,
+				E04A866824C36B3500A92A25 /* RealmSwift.framework */,
+				E04A866724C36B3500A92A25 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +204,7 @@
 				D01CB44524BEE7D100249EA9 /* Sources */,
 				D01CB44624BEE7D100249EA9 /* Frameworks */,
 				D01CB44724BEE7D100249EA9 /* Resources */,
+				E04A866F24C36B3500A92A25 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,9 +326,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04A866424C3681800A92A25 /* HelthViewController.swift in Sources */,
+				E04A867324C36ED200A92A25 /* PillsCollectionViewCell.swift in Sources */,
 				D01CB45124BEE7D100249EA9 /* ViewController.swift in Sources */,
 				D01CB44D24BEE7D100249EA9 /* AppDelegate.swift in Sources */,
+				E0BB943224C76FBF00B06E54 /* DBManager.swift in Sources */,
+				E0BB943024C76E5400B06E54 /* PillModel.swift in Sources */,
+				E0BB943424C782B400B06E54 /* AddPills.swift in Sources */,
 				D01CB44F24BEE7D100249EA9 /* SceneDelegate.swift in Sources */,
+				E0BB942E24C76E4000B06E54 /* Pill.swift in Sources */,
+				E04A867124C36E7F00A92A25 /* MedicamentsCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -435,12 +509,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6376RBG4Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MedTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dasha.MedTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MedTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,12 +532,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6376RBG4Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MedTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dasha.MedTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MedTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

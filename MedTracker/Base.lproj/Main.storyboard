@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yNW-Er-IPX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -58,23 +58,44 @@
         <!--Здоровье-->
         <scene sceneID="7wW-VV-HmM">
             <objects>
-                <viewController id="4K9-RM-0qo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Health" modalPresentationStyle="fullScreen" id="4K9-RM-0qo" customClass="HelthViewController" customModule="MedTracker" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Hm-na-gmJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="EF2-RX-xDY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Здоровье" image="heart" catalog="system" id="y49-pJ-mV8"/>
+                    <connections>
+                        <segue destination="sLS-qu-if6" kind="show" identifier="goToAdd" id="ds0-EL-EWJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRs-fQ-z6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="-402"/>
+            <point key="canvasLocation" x="202.89855072463769" y="-402.45535714285711"/>
+        </scene>
+        <!--Здоровье-->
+        <scene sceneID="jDz-og-mIt">
+            <objects>
+                <viewController storyboardIdentifier="addPills" modalPresentationStyle="fullScreen" id="sLS-qu-if6" customClass="AddPills" customModule="MedTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tky-eU-VcC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ETs-VZ-QJL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Здоровье" image="heart" catalog="system" id="bb6-3m-fp6"/>
+                    <navigationItem key="navigationItem" id="VBL-dH-Qed"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihQ-P2-nzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142.0289855072465" y="-402.45535714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MZC-2b-I1o">
             <objects>
-                <tabBarController id="yNW-Er-IPX" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="general" id="yNW-Er-IPX" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EmX-0p-Bmg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
