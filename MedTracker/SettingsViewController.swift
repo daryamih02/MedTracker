@@ -35,10 +35,12 @@ func createForm() {
         
     Section("Цель")
         
-    <<< IntRow() {
+    <<< DecimalRow("dreamWeightLabel") {
         $0.title = "Желаемый вес"
-        $0.value = 55
-    }
+        
+    }.onChange({ (row) in
+        UserDefaults.standard.set(Double(row.value!), forKey: "dreamWeight")
+    })
         
         
     +++
