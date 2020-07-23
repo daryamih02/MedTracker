@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-MedTrackerTests/Pods-MedTrackerTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework
+${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework
+${BUILT_PRODUCTS_DIR}/ViewRow/ViewRow.framework

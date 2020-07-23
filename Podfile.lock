@@ -1,0 +1,31 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - Eureka (5.2.1)
+  - SwiftChart (1.0.1)
+  - ViewRow (0.8):
+    - Eureka (>= 5.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - Eureka
+  - SwiftChart
+  - ViewRow
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - Eureka
+    - SwiftChart
+    - ViewRow
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
+  ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
+
+PODFILE CHECKSUM: 4fbfb7e03801c4ac688f7a37ad1943d417a383a3
+
+COCOAPODS: 1.9.3
