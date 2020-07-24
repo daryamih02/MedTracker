@@ -87,7 +87,7 @@ override func viewDidLoad() {
             }
             <<< DecimalRow() {
                 $0.title = "Текущий вес"
-                $0.value = UserDefaults.standard.value(forKey: "weight") as! Double
+                $0.value = UserDefaults.standard.value(forKey: "weight") as? Double
             }
 
                        <<< ViewRow<Chart>("graph") { (row) in
