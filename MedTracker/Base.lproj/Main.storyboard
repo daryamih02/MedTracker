@@ -40,6 +40,7 @@
             </objects>
             <point key="canvasLocation" x="183" y="1428"/>
         </scene>
+
         <!--Settings View Controller-->
         <scene sceneID="UjN-9S-yBQ">
             <objects>
@@ -97,6 +98,7 @@
                         <viewLayoutGuide key="safeArea" id="EF2-RX-xDY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Здоровье" image="heart" catalog="system" id="y49-pJ-mV8"/>
+                    <navigationItem key="navigationItem" id="2VC-wW-cY0"/>
                     <connections>
                         <segue destination="sLS-qu-if6" kind="show" identifier="goToAdd" id="ds0-EL-EWJ"/>
                     </connections>
@@ -119,6 +121,9 @@
                     <tabBarItem key="tabBarItem" title="Здоровье" image="heart" catalog="system" id="bb6-3m-fp6"/>
                     <navigationItem key="navigationItem" id="VBL-dH-Qed"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="4K9-RM-0qo" kind="show" identifier="goBack" id="8ZR-TQ-zd6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihQ-P2-nzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,6 +140,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="4K9-RM-0qo" kind="relationship" relationship="viewControllers" id="7jy-Xj-z4L"/>
+
                         <segue destination="Hqx-Kd-kSk" kind="relationship" relationship="viewControllers" id="IpS-Mr-JNc"/>
                         <segue destination="WqU-xg-YJY" kind="relationship" relationship="viewControllers" id="05K-6l-noF"/>
                     </connections>
@@ -182,6 +188,9 @@
             <point key="canvasLocation" x="-714.49275362318849" y="719.86607142857144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8ZR-TQ-zd6"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
         <image name="heart" catalog="system" width="128" height="109"/>
